@@ -53,12 +53,12 @@ public class MagentoClientCategoryUnitTest {
 
    @Test
    public void test_list_products_in_category() {
-      long id = 15;
+      long id = 31;
       MagentoClient client = new MagentoClient(Mediator.url);
       client.loginAsAdmin(Mediator.adminUsername, Mediator.adminPassword);
 
       List<CategoryProduct> products = client.categories().getProductsInCategory(id);
-      logger.info("products in category 15:\r\n{}", JSON.toJSONString(products, SerializerFeature.PrettyFormat));
+      logger.info("products in category 31:\r\n{}", JSON.toJSONString(products, SerializerFeature.PrettyFormat));
    }
 
    @Test
